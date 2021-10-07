@@ -22,7 +22,7 @@ header {
 }
 .eva { 
     color: #fff;
-    font-size: 75%;
+    font-size: 2em;
     text-decoration: none;
 }
 .navbar {
@@ -40,28 +40,31 @@ header {
     margin-left: 3em;
     font-weight: 700;
 }
-    /****H1******/
-h1 {
-    text-align: center;
-    font-size: 5em;
-    /****PHOTOS GALERIE****/
-}
-.images {
+/****MAIN****/
+main {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;    
+   justify-content: space-evenly;
+    align-content: center;
     align-items: center;
-    margin-bottom: 9em;
-
+    margin-bottom:1.5em;
+    margin-left: 5em
 }
-.images img {
-    margin: 1em;
-    max-width: 20em;
-    max-height: 20em;
+main article  {
+    text-align: center;
+    width: 50%;  
+    margin-left: 20em
 }
- /***FOOTER***/
-
+main article h1 {
+    width: 70%;
+    font-size: 3em;
+}
+main article p {
+    width: 70%;
+    font-size: 2em;
+    text-align: justify;
+}
+/****FOOTER*****/
 footer {
     width: 100%;
     background-color: #F5BCA9;
@@ -71,4 +74,3 @@ footer {
     justify-content: space-evenly;
     display: flex;
 }
-
