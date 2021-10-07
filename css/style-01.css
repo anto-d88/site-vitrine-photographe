@@ -28,6 +28,7 @@ header {
 }
 .navbar {
     display: flex;
+    position: relative;
     
 }
 .navbar li {
@@ -40,6 +41,10 @@ header {
     text-decoration: none;
     margin-left: 3em;
     font-weight: 700;
+}
+.navbar li a:hover {
+    transition: 0.05s;
+    color: #000;
 }
 /****MAIN****/
 .fond {
@@ -198,7 +203,7 @@ footer {
     
    }  
 }
-@media(max-width:480px){
+@media(max-width:580px){
     * {
         overflow: hidden;
     }
@@ -213,8 +218,10 @@ footer {
 .fond .caroussel img {
     max-width: 15em;
     cursor: pointer;
+    
 }   
 .fond .caroussel img {
+
 display: flex;
 animation-duration: 20s;
 animation-name: mesImages;
@@ -238,6 +245,9 @@ overflow: visible;
     font-size: 3em;
     color: #F5BCA9;
 } 
+header {
+    overflow: visible;
+}
 header, 
 header.sticky{
     padding: 10px 20px;
@@ -265,24 +275,26 @@ header .navbar.active{
     width: 100%;
     height: calc(100% -68px);
     position: fixed;
-    top: 68px;
+    top: 3em;
     left:0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background:#F5BCA9;
     align-items: center;
+    z-index: 1;
 }
 
 .menuToggle{
     position: relative;
     width: 40px;
     height: 40px;
-    background-image: url(./img/menu.png);
+    background-image: url(menu.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     background-size: 30px;
+    
 }
 
 .menuToggle.active
@@ -295,5 +307,6 @@ header .navbar.active{
 
 header.sticky .menuToggle{
     filter: invert(1);
+    
 }
 }
