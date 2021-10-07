@@ -208,10 +208,10 @@ footer {
     /*margin-top: 2em;*/
     width: 100%;
     overflow: hidden;
-    height: 15em;   
+    height: 10em;   
 }
 .fond .caroussel img {
-    max-width: 23em;
+    max-width: 15em;
     cursor: pointer;
 }   
 .fond .caroussel img {
@@ -238,5 +238,62 @@ overflow: visible;
     font-size: 3em;
     color: #F5BCA9;
 } 
+header, 
+header.sticky{
+    padding: 10px 20px;
+}
 
+header .navbar li{
+    margin-left: 0px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.navbar{
+    display: none;
+}
+/*section{
+    padding: 20px;
+}*/
+
+header .navbar.active{
+    width: 100%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background:#F5BCA9;
+    align-items: center;
+}
+
+.menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 30px;
+}
+
+.menuToggle.active
+{
+    background-image: url(./img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-origin: center;
+}
+
+header.sticky .menuToggle{
+    filter: invert(1);
+}
 }
