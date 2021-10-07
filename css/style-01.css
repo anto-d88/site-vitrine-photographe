@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth; 
+    overflow: hidden;
      
 }
 /****HEADER*****/
@@ -17,8 +18,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-
+    
+    
 }
 .eva { 
     color: #fff;
@@ -27,7 +28,7 @@ header {
 }
 .navbar {
     display: flex;
-
+    
 }
 .navbar li {
     list-style: none;
@@ -44,7 +45,7 @@ header {
 .fond {
     width: 100%;
     margin: auto;
-
+    
 }
 .fond .caroussel {
     background-color:#F5BCA9 ;
@@ -54,7 +55,7 @@ header {
     height: 20em;
     
     
-
+    
 }
 .fond .caroussel .player {
     display: flex;
@@ -69,7 +70,7 @@ header {
     animation-name: mesImages;
     animation-iteration-count: infinite;
     overflow: visible;
-
+    
 }
 @keyframes mesImages {
     0% {
@@ -106,4 +107,89 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     display: flex;
+}
+/*********ECRAN PC PORTABLE*************/
+@media(max-width:1366px){
+}
+.fond .caroussel {
+    background-color:#F5BCA9 ;
+    /*margin-top: 2em;*/
+    width: 100%;
+    overflow: hidden;
+    height: 15em;   
+}
+.fond .caroussel img {
+    max-width: 23em;
+    cursor: pointer;
+}   
+@keyframes mesImages {
+    0% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-825px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.text {
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 00.5em
+}
+.text h2 {
+    text-align: center;
+    font-size: 3.5em;
+    color: #F5BCA9;
+}
+.text p {
+    font-size: 1.5em;
+    text-justify: inter-word;
+}
+@media(max-width:991px){
+    * {
+        overflow: visible;
+        
+    }
+    .navbar li a {
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 1em;
+        font-weight: 700;
+    }
+}
+.fond .caroussel {
+    background-color:#F5BCA9 ;
+    /*margin-top: 2em;*/
+    width: 100%;
+    overflow: hidden;
+    height: 28em;   
+}
+.fond .caroussel img {
+    max-width: 40em;
+    cursor: pointer;
+}   
+@keyframes mesImages {
+    0% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-180em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+    .text h2 {
+        text-align: center;
+        font-size: 5em;
+        color: #F5BCA9;
+    }
+}
+@media(max-width:480px){
+    
 }

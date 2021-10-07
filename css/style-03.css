@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth;
-    
+}
+@media(max-width:1366px){
+* { 
+     overflow: hidden;
+}
 }
 /****HEADER*****/
 header {

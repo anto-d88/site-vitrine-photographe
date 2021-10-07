@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
     
 }
-    
+
 
 /****HEADER*****/
 header {
@@ -19,8 +19,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-
+    
+    
 }
 .eva { 
     color: #fff;
@@ -30,7 +30,7 @@ header {
 
 .navbar {
     display: flex;
-
+    
 }
 .navbar li {
     list-style: none;
@@ -51,7 +51,7 @@ header {
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
     max-width: 500px;
     margin: 11em auto;
-
+    
     background-image: url(bebe-formulaire.jfif) ;
     
 }
@@ -104,3 +104,9 @@ footer {
     justify-content: space-evenly;
     display: flex;
 }
+
+@media(max-width:1366px){
+    * { 
+         overflow: hidden;
+    }
+    }

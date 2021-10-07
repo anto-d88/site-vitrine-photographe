@@ -17,8 +17,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-
+    
+    
 }
 .eva { 
     color: #fff;
@@ -27,7 +27,7 @@ header {
 }
 .navbar {
     display: flex;
-
+    
 }
 .navbar li {
     list-style: none;
@@ -40,7 +40,7 @@ header {
     margin-left: 3em;
     font-weight: 700;
 }
-    /****H1******/
+/****H1******/
 h1 {
     text-align: center;
     font-size: 5em;
@@ -53,14 +53,14 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 9em;
-
+    
 }
 .images img {
     margin: 1em;
     max-width: 20em;
     max-height: 20em;
 }
- /***FOOTER***/
+/***FOOTER***/
 
 footer {
     width: 100%;
@@ -72,3 +72,9 @@ footer {
     display: flex;
 }
 
+
+@media(max-width:1366px){
+    * { 
+         overflow: hidden;
+    }
+    }

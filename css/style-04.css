@@ -17,8 +17,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-
+    
+    
 }
 .eva { 
     color: #fff;
@@ -27,7 +27,7 @@ header {
 }
 .navbar {
     display: flex;
-
+    
 }
 .navbar li {
     list-style: none;
@@ -44,7 +44,7 @@ header {
 main {
     width: 100%;
     display: flex;    
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     margin-bottom:1.5em;
@@ -74,3 +74,9 @@ footer {
     justify-content: space-evenly;
     display: flex;
 }
+
+@media(max-width:1366px){
+    * { 
+         overflow: hidden;
+    }
+    }
