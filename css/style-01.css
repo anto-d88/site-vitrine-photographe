@@ -161,7 +161,7 @@ footer {
         margin-left: 1em;
         font-weight: 700;
     }
-}
+
 .fond .caroussel {
     background-color:#F5BCA9 ;
     /*margin-top: 2em;*/
@@ -196,7 +196,7 @@ footer {
     animation-iteration-count: infinite;
     overflow: visible;
     
-}  
+   }  
 }
 @media(max-width:480px){
     * {
