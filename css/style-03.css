@@ -9,11 +9,6 @@
          
     }
 }
-@media(max-width:1366px){
-* { 
-     overflow: hidden;
-}
-}
 /****HEADER*****/
 header {
     background: #F5BCA9;
@@ -80,6 +75,8 @@ footer {
     justify-content: space-evenly;
     display: flex;
 }
+@media(max-width:1366px){
+}
 @media(max-width:1360px){
 
 }
@@ -87,6 +84,16 @@ footer {
     
 }
 @media(max-width:580px){
+    main {
+        align-items: center;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    main img {
+        margin: auto;
+        width: 100%;
+    }
     header {
         overflow: visible;
     }

@@ -228,13 +228,12 @@ footer {
 @media(max-width:580px){
     .fond .caroussel {
         background-color:#f5bca900 ;
-        height: 20em;
+        height: 16em;
     }
     .fond .caroussel img {
         counter-reset: inherit;
         cursor: pointer;
-        width: 25em;
-        height: 20em;
+        width: 100%
     }
     .fond .caroussel img {
         display: flex;
