@@ -1,11 +1,13 @@
-* {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Birthstone', 'cursive';
-    scroll-behavior: smooth;
-    overflow: hidden;
-    
+@media(max-width:1920px){
+    * {
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Birthstone', 'cursive';
+        scroll-behavior: smooth; 
+        overflow: hidden;
+         
+    }
 }
 /****HEADER*****/
 header {
@@ -108,8 +110,8 @@ footer {
 }
     @media(max-width:991px){
         * {
-            overflow: hidden;
-            
+            /*overflow: hidden;*/
+            overflow: visible;
         }
         .navbar li a {
             font-size: 2em;
@@ -119,8 +121,6 @@ footer {
             font-weight: 700;
         }
 
-
-        
     }
     @media(max-width:580px){
         header {
