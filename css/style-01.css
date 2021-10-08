@@ -274,7 +274,8 @@ footer {
 } 
 header {
     overflow: visible;
-    position: static;
+    position: sticky;
+    z-index: 1;
 }
 /*header, 
 header.sticky{
