@@ -190,22 +190,20 @@ footer {
     }
 
 .fond .caroussel {
+    counter-reset: inherit;
     background-color:#F5BCA9 ;
     /*margin-top: 2em;*/
     width: 100%;
     overflow: hidden;
     height: 28em;   
 }
-.fond .caroussel img {
-    max-width: 40em;
-    cursor: pointer;
-}   
+
 @keyframes mesImages {
     0% {
         transform: translateX(0);
     }
     75% {
-        transform: translateX(-180em);
+        transform: translateX(-500%);
     }
     100% {
         transform: translateX(0);
@@ -216,16 +214,8 @@ footer {
         font-size: 5em;
         color: #F5BCA9;
     } 
-    .fond .caroussel img {
-        display: flex;
-    animation-duration: 30s;
-    animation-name: mesImages;
-    animation-iteration-count: infinite;
-    overflow: visible;
-    
-   }  
-}
-@media(max-width:580px){
+  
+
     .fond .caroussel {
         background-color:#f5bca900 ;
         height: 16em;
@@ -243,12 +233,14 @@ footer {
         overflow: visible;
         
     }
+}
+@media(max-width:580px){
     @keyframes mesImages {
         0% {
             transform: translateX(0);
         }
         75% {
-            transform: translateX(-100em);
+            transform: translateX(-500%);
         }
         100% {
             transform: translateX(0);
