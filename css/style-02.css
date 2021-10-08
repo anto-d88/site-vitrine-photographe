@@ -152,7 +152,7 @@ footer {
         header .navbar.active{
             width: 100%;
             height: calc(100% -68px);
-            position: fixed static;
+            position: fixed ;
             top: 3em;
             left:0;
             display: flex;
