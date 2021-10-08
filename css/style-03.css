@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth;
-    
+}
+@media(max-width:1366px){
+* { 
+     overflow: hidden;
+}
 }
 /****HEADER*****/
 header {
@@ -71,4 +75,72 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     display: flex;
+}
+@media(max-width:1360px)
+@media(max-width:991px)
+@media(max-width:580px){
+    header {
+        overflow: visible;
+    }
+    header, 
+    header.sticky{
+        padding: 10px 20px;
+    }
+    
+    header .navbar li{
+        margin-left: 0px;
+    }
+    
+    header .navbar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    /*section{
+        padding: 20px;
+    }*/
+    
+    header .navbar.active{
+        width: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top: 3em;
+        left:0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background:#F5BCA9;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-size: 30px;
+        
+    }
+    
+    .menuToggle.active
+    {
+        background-image: url(./img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+    
+    header.sticky .menuToggle{
+        filter: invert(1);
+        
+    }
 }
