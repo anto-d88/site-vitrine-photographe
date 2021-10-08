@@ -99,10 +99,14 @@ main article p {
 }
 main img {
     margin:0 10%;   
-    width: 90%;
+    width: 92%;
 }
 }
 @media(max-width:1360px){
+    main img {
+        margin:0 10%;   
+        width: 90%;
+    }
 
 }
 @media(max-width:991px){
@@ -117,6 +121,7 @@ main img {
         margin: auto;
         flex-wrap: wrap;
         flex-direction: column-reverse;
+        justify-content: space-between;
     }
     main img {
         margin: auto;
