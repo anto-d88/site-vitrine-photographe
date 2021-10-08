@@ -152,7 +152,6 @@ footer {
         header .navbar.active{
             width: 100%;
             height: calc(100% -68px);
-            position: fixed;
             top: 3em;
             left:0;
             display: flex;
@@ -192,7 +191,7 @@ footer {
             /*display: flex;
             flex-wrap: wrap;*/
             align-items: center;
-            margin-bottom: 0;
+            margin-bottom: 9em;
             
         }
         .images img { 
