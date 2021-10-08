@@ -330,3 +330,12 @@ header.sticky .menuToggle{
     
 }
 }
+@media(max-width:400px){
+.fond .caroussel img {
+    counter-reset: inherit;
+    cursor: pointer;
+    width: 15em;
+    height: 15em;
+    
+}
+}
