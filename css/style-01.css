@@ -226,39 +226,35 @@ footer {
    }  
 }
 @media(max-width:580px){
-
-.fond .caroussel {
-    background-color:#F5BCA9 ;
-    /*margin-top: 2em;*/
-    width: 100%;
-    overflow: hidden;
-    height: 10em;   
-}
-.fond .caroussel img {
-    max-width: 10em;
-    cursor: pointer;
-    
-}   
-.fond .caroussel img {
-
-display: flex;
-animation-duration: 20s;
-animation-name: mesImages;
-animation-iteration-count: infinite;
-overflow: visible;
-
-}  
-@keyframes mesImages {
-    0% {
-        transform: translateX(0);
+    .fond .caroussel {
+        background-color:#f5bca900 ;
+        height: 20em;
     }
-    75% {
-        transform: translateX(-825);
+    .fond .caroussel img {
+        counter-reset: inherit;
+        cursor: pointer;
+        width: 25em;
+        height: 20em;
     }
-    100% {
-        transform: translateX(0);
+    .fond .caroussel img {
+        display: flex;
+        animation-duration: 40s;
+        animation-name: mesImages;
+        animation-iteration-count: infinite;
+        overflow: visible;
+        
     }
-}
+    @keyframes mesImages {
+        0% {
+            transform: translateX(0);
+        }
+        75% {
+            transform: translateX(-100em);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
 .text {
     width: 90%;
     justify-content: space-evenly;
@@ -267,8 +263,9 @@ overflow: visible;
     margin-bottom: 1em
 }
 .text h2 {
+    font-weight: 150%;
     text-align: center;
-    font-size: 100%;
+    font-size: 250%;
     color: #F5BCA9;
 }
 .text p {
