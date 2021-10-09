@@ -28,13 +28,19 @@
 
 <body>
   <header>
-    <a class="eva" href="index.html"><h1>Eva Pictur</h1></a>
+    <h1 class="eva"><a href="index.html">Eva Pictur</a></h1>
     <article class="menuToggle" onclick="toggleMenu();"></article>
     <ul class="navbar">
-      <li><a href="galerie.html" onclick="toggleMenu();">Galerie</a></li>
-      <li><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
-      <li><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
-      <li><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
+      <li class="title">
+        <a href="#" onclick="toggleMenu();">Galerie<i class="fa fa-angle-down"></i></a>
+        <ul class="sous-menu">
+          <li><a href="galerie.html" onclick="toggleMenu();">Nouveaux nés</a></li>
+          <li><a href="#" onclick="toggleMenu();">Grossese</a></li>
+        </ul>
+      </li>
+      <li class="title"><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
+      <li class="title"><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
+      <li class="title"><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
     </ul>
   </header>
   <main>

@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth; 
-    overflow: hidden;
-     
+         
 }
+ html{
+  overflow: hidden;
+ }
 /****HEADER*****/
 header {
     background: #F5BCA9;
@@ -22,31 +24,77 @@ header {
     
     
 }
-.eva { 
+.eva a {
     color: #fff;
-    font-size: 4em;
+    font-size: 250%;
     text-decoration: none;
+
 }
 .navbar {
     display: flex;
     position: relative;
     
 }
-.navbar li {
+.navbar .title{
+    display: inline-block;
+    position: relative;
     list-style: none;
+    transition: 0.5s;
     
 }
-.navbar li a {
+.navbar .title a {
     font-size: 2em;
     color: #fff;
     text-decoration: none;
     margin-left: 3em;
     font-weight: 700;
 }
-.navbar li a:hover {
+.navbar .title a:hover {
     transition: 0.05s;
     color: #000;
 }
+.navbar .sous-menu {
+    /*display: block;*/
+    position: absolute;
+   /* visibility: hidden;*/
+    height: 0;
+    top:100%;
+    left : 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: transform 1s ease;
+    background-color: #F5BCA9;
+    box-shadow: 0 2px 3px rgba(34, 36, 38, .15);
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+
+    
+}
+.navbar .title:hover .sous-menu {
+      
+    visibility: visible;
+    height: auto;
+    transform: scaleY(1);
+  
+  }
+  .navbar .sous-menu li{
+    text-align: justify;
+    display: inline-block;
+    color: #000;
+    /*width: 150px;*/
+    margin-left: -4em;
+    padding: 5%;
+    transition: 0.2s;
+  } 
+  .navbar .sous-menu li a {
+    text-transform: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .navbar .sous-menu li a:hover {
+      color: #000;
+  }
 /****MAIN****/
 .fond {
     width: 100%;
@@ -122,7 +170,6 @@ footer {
     background-color:#F5BCA9 ;
     /*margin-top: 2em;*/
     width: 100%;
-    overflow: hidden;
     height: 15em;   
 }
 .fond .caroussel img {
@@ -218,12 +265,12 @@ footer {
 
     .fond .caroussel {
         background-color:#f5bca900 ;
-        height: 16em;
+        height: 15em;
     }
     .fond .caroussel img {
         counter-reset: inherit;
         cursor: pointer;
-        width: 100%
+        width: 100%;
     }
     .fond .caroussel img {
         display: flex;

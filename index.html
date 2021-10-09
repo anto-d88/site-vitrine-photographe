@@ -30,21 +30,25 @@
 
 <body>
   <header>
-    <h1 class="eva">Eva Pictur</h1>
+    <h1 class="eva"><a href="index.html">Eva Pictur</a></h1>
     <article class="menuToggle" onclick="toggleMenu();"></article>
     <ul class="navbar">
-      <li><a href="galerie.html" onclick="toggleMenu();">Galerie</a></li>
-      <li><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
-      <li><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
-      <li><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
+      <li class="title">
+        <a href="#" onclick="toggleMenu();">Galerie<i class="fa fa-angle-down"></i></a>
+        <ul class="sous-menu">
+          <li><a href="galerie.html" onclick="toggleMenu();">Nouveaux nés</a></li>
+          <li><a href="#" onclick="toggleMenu();">Grossese</a></li>
+        </ul>
+      </li>
+      <li class="title"><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
+      <li class="title"><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
+      <li class="title"><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
     </ul>
-
-
   </header>
 
-  <main>
-
-    <section class="fond">
+  
+<main>
+  <section class="fond">
       <section class="caroussel">
           <section class="player">
             <img src="./img/bebe-banniere-01.jfif" alt="bebe-b01">
