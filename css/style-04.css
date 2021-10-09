@@ -5,7 +5,7 @@
         box-sizing: border-box;
         font-family: 'Birthstone', 'cursive';
         scroll-behavior: smooth; 
-        overflow: hidden;
+        /*overflow: hidden;*/
          
     }
 }
@@ -44,7 +44,7 @@ header {
     font-weight: 700;
 }
 /****MAIN****/
-main {
+/*main {
     width: 100%;
     display: flex;    
     justify-content: space-evenly;
@@ -80,59 +80,73 @@ footer {
 
 @media(max-width:1366px){
     main {
-        width: 100%;    
-        justify-content: space-between;
-        align-content: center;
-        margin-bottom: 0;
-        
-        
+        display: flex;
+        justify-content: space-evenly;
     }
     main article  {
-        width: 50%;  
-        margin : -2% 10% 1% 0%
+        max-width: 40%;
+
     }
     main article h1 {
-        width: 70%;
-        font-size: 3em;
+        text-align: center;
+  
     }
     main article p {
-        width: 80%;
-        font-size: 145%;
         text-align: justify;
+        font-size: 140%;
     }
     main img{
-        width: 80%;
+        width: 82%;
+     
     }
     
 }
 @media(max-width:1360px){
     
     main {
-        width: 100%;    
-        justify-content: space-between;
-        align-content: center;
-        margin-bottom: 0;
-        
-        
+        display: flex;
+        justify-content: space-evenly;
     }
     main article  {
-        width: 50%;  
-        margin : -2% 10% 0% 0%
+        max-width: 40%;
+
     }
     main article h1 {
-        width: 70%;
-        font-size: 3em;
+        text-align: center;
+  
     }
     main article p {
-        width: 80%;
-        font-size: 140%;
         text-align: justify;
+        font-size: 130%;
     }
     main img{
         width: 80%;
+     
     }
 }
 @media(max-width:991px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    main article  {
+        max-width: 90%;
+
+    }
+    main article h1 {
+        text-align: center;
+  
+    }
+    main article p {
+        text-align: justify;
+        font-size: 100%;
+    }
+    main img{
+        width: 100%;
+        margin: auto;
+     
+    }
     
     header {
         overflow: visible;
@@ -198,33 +212,6 @@ footer {
         filter: invert(1);
         
     }
-    main {
-        margin: auto;
-        flex-wrap: wrap; 
-        align-items: center;
-        justify-content: space-between;   
-         
         
-        
-    }
-    main article  {
-        width: 50%;  
-        margin : -2% 10% 1% 0%
-    }
-    main article h1 {
-        width: 70%;
-        font-size: 3em;
-    }
-    main article p {
-        width: 80%;
-        font-size: 145%;
-        text-align: justify;
-    }
-    main img{
-        margin: auto;
-        
-        width: 100%;
-    }
-}
-@media(max-width:580px){
+
 }
