@@ -50,7 +50,7 @@ header {
     padding: 30px 50px;
     
     box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
-    max-width: 500px;
+    width: 500px;
     margin: 11em auto;
     
     background-image: url(bebe-formulaire.jfif) ;
@@ -107,19 +107,25 @@ footer {
 }
 
 @media(max-width:1366px){
-    * { 
-         overflow: hidden;
+    .contactbox {
+        margin: 1em auto;        
     }
-    }
-    @media(max-width:1360px){
-
-    }
-@media(max-width:991px){
-
 }
-@media(max-width:580px){
-    header {
-        overflow: visible;
+@media(max-width:1360px){
+        .contactbox {
+            margin: 0.5em auto;        
+        }
+        
+    }
+    @media(max-width:991px){
+        .contactbox { 
+            
+            margin: 0.5em auto;        
+        }
+
+
+        header {
+            overflow: visible;
     }
     header, 
     header.sticky{
@@ -181,4 +187,14 @@ footer {
         filter: invert(1);
         
     }
+}
+
+@media(max-width:500px){
+    .contactbox {
+
+        width: 99%;
+        margin: 0.5em auto;
+        
+    }
+
 }
