@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style-02.css">
+  <link rel="stylesheet" href="css/galerie.css">
 
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,20 +32,16 @@
     <h1 class="eva"><a href="index.html">Eva Pictur</a></h1>
     <article class="menuToggle" onclick="toggleMenu();"></article>
     <ul class="navbar">
-      <li class="title">
-        <a href="#" onclick="toggleMenu();">Galerie<i class="fa fa-angle-down"></i></a>
-        <ul class="sous-menu">
-          <li><a href="galerie.html" onclick="toggleMenu();">Nouveaux nés</a></li>
-          <li><a href="#" onclick="toggleMenu();">Grossese</a></li>
-        </ul>
-      </li>
+      <li class="title"><a href="galerie.html" onclick="toggleMenu();"></a>Galerie Bébé</li>
+      <li class="title"><a href="grossese.html" onclick="toggleMenu();">Galerie Grossese</a></li>
       <li class="title"><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
       <li class="title"><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
       <li class="title"><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
     </ul>
   </header>
+
   <main>
-    <h1>Galerie</h1>
+    <h1 class="titre">Galerie</h1>
   <figure class="images">
     <img src="./img/bebe-01.jpg" alt="bebe-01">
     <img src="./img/bebe-02.jfif" alt="bebe-02">
@@ -74,7 +70,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   
-<script>
+  <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>

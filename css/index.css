@@ -5,11 +5,10 @@
     box-sizing: border-box;
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth; 
-         
 }
  html{
   overflow: hidden;
- }
+}
 /****HEADER*****/
 header {
     background: #F5BCA9;
@@ -21,8 +20,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    
 }
 .eva a {
     color: #fff;
@@ -53,48 +50,8 @@ header {
     transition: 0.05s;
     color: #000;
 }
-.navbar .sous-menu {
-    /*display: block;*/
-    position: absolute;
-   /* visibility: hidden;*/
-    height: 0;
-    top:100%;
-    left : 0;
-    transform: scaleY(0);
-    transform-origin: 50% 0;
-    transition: transform 1s ease;
-    background-color: #F5BCA9;
-    box-shadow: 0 2px 3px rgba(34, 36, 38, .15);
-    border-radius: 0 0 5px 5px;
-    z-index: 1;
 
-    
-}
-.navbar .title:hover .sous-menu {
-      
-    visibility: visible;
-    height: auto;
-    transform: scaleY(1);
-  
-  }
-  .navbar .sous-menu li{
-    text-align: justify;
-    display: inline-block;
-    color: #000;
-    /*width: 150px;*/
-    margin-left: -4em;
-    padding: 5%;
-    transition: 0.2s;
-  } 
-  .navbar .sous-menu li a {
-    text-transform: none;
-    color: #fff;
-    font-weight: normal;
-    font-size: 24px;
-  }
-  .navbar .sous-menu li a:hover {
-      color: #000;
-  }
+
 /****MAIN****/
 .fond {
     width: 100%;
@@ -246,6 +203,7 @@ footer {
 }
 
 @keyframes mesImages {
+   
     0% {
         transform: translateX(0);
     }
@@ -282,6 +240,12 @@ footer {
     }
 }
 @media(max-width:580px){
+    .eva a {
+        color: #fff;
+        font-size: 200%;
+        text-decoration: none;
+    
+    }
     @keyframes mesImages {
         0% {
             transform: translateX(0);
@@ -315,10 +279,10 @@ header {
     position: sticky;
     z-index: 1;
 }
-/*header, 
+header, 
 header.sticky{
     padding: 10px 20px;
-}*/
+}
 
 header .navbar li{
     margin-left: 0px;
@@ -366,7 +330,6 @@ header .navbar.active{
 
 .menuToggle.active
 {
-    background-image: url(./img/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-origin: center;
@@ -381,8 +344,7 @@ header.sticky .menuToggle{
 .fond .caroussel img {
     counter-reset: inherit;
     cursor: pointer;
-    width: 15em;
-    height: 15em;
+    width: 100%
     
 }
 }
