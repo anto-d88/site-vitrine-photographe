@@ -124,6 +124,12 @@ main img {
 
 }
 @media(max-width:991px){
+    .eva a {
+        color: #fff;
+        font-size: 200%;
+        text-decoration: none;
+    
+    }
     main article  {
     
         text-align: center;

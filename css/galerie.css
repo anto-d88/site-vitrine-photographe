@@ -111,6 +111,12 @@ footer {
 }
 }
 @media(max-width:991px){
+    .eva a {
+        color: #fff;
+        font-size: 200%;
+        text-decoration: none;
+    
+    }
     header {
         overflow: visible;
         position: sticky;

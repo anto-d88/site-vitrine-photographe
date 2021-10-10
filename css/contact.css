@@ -135,6 +135,12 @@ footer {
         
     }
     @media(max-width:991px){
+        .eva a {
+            color: #fff;
+            font-size: 200%;
+            text-decoration: none;
+        
+        }
         .contactbox { 
             
             margin: 0.5em auto;        
