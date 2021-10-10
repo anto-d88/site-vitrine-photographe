@@ -228,8 +228,7 @@ footer {
     .fond .caroussel img {
         counter-reset: inherit;
         cursor: pointer;
-        width: 15em;
-        
+        width: 15en;
     }
     .fond .caroussel img {
         display: flex;
