@@ -223,13 +223,13 @@ footer {
 
     .fond .caroussel {
         background-color:#f5bca900 ;
-        height: 15em;
+        height: 16em;
     }
     .fond .caroussel img {
         counter-reset: inherit;
         cursor: pointer;
         width: 15em;
-        height: 15em;
+        height: 16em;
     }
     .fond .caroussel img {
         display: flex;
