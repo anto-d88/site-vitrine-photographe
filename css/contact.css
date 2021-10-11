@@ -1,3 +1,4 @@
+/******ECRAN MAX 1920PX*******/
 @media(max-width:1920px){
     * {
         margin: 0;
@@ -8,11 +9,11 @@
          
     }
     html {
-        overflow: hidden;
+        overflow: hidden;                                             /****RETIR LES BARE DE SCROL****/
     }
 
 /****HEADER*****/
-header {
+header {                                                       /****MISE EN FORME DU HEADER****/
     background: #F5BCA9;
     /*position: fixed;*/
     top: 0%;
@@ -25,35 +26,31 @@ header {
     
     
 }
-.eva a {
+.eva a {                                                           /****LOGO EN HAUT A GAUCHE EVA PICTUR****/
     color: #fff;
     font-size: 250%;
     text-decoration: none;
 
 }
 
-.navbar {
+.navbar {                                                   /*****ALIGNEMENT SUR UNE LIGNE HORIZONTAL DES TITRES DE LA NAVBAR****/
     display: flex;
     position: relative;
     
     
 }
-.navbar .title{
-    display: inline-block;
-    position: relative;
+.navbar .title{                                           /******RETIR LES POINTS DE MA LISTE******/
     list-style: none;
-    transition: 0.5s;
-    overflow: visible;
-    
 }
-.navbar .title a {
+.navbar .title a {                                      /*******MISE EN FORME DES TITRES DE LA NABAR******/
     font-size: 2em;
     color: #fff;
     text-decoration: none;
     margin-left: 3em;
     font-weight: 700;
 }
-.navbar .title a:hover {
+.navbar .title a:hover {                                /************CHANGE LA COULEUR DU TEXTE AU PASSAGE DE LU CURSEUR AVEC UNE TRANSITION DE 0.05S**************/
+    transition: 0.05s;
     transition: 0.05s;
     color: #000;
 }
@@ -61,7 +58,7 @@ header {
 
 
 /****MAIN*/
-.contactbox {
+.contactbox {                                             /*****************TAILLE DU FORMULAIRE + IMAGE DE FOND + POSITIONNEMENT DU FORMULAIRE**********************/
     
     padding: 30px 50px;
     
@@ -72,18 +69,10 @@ header {
     background-image: url(bebe-formulaire.jfif) ;
     
 }
-.contactbox .inputbox {
-    position: relative;
+.contactbox .inputbox {                             /************TAILLE DES INPUTBOX + MISE EN FORME****************/                              
+        position: relative;
     width: 100%;
-    margin-bottom: 10px;
-    
-}
-.contactbox h3 {
-    color: #111;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-.contactbox .inputbox {
+    margin-bottom: 10px;                           
     width: 100%;
     border: 1px solid #F5BCA9;
     padding: 10px;
@@ -93,8 +82,15 @@ header {
     font-weight: 300;
     resize: none;
     background-color: rgba(255, 255, 255, 0.5);
+    
 }
-.contactbox [type="submit"], [type="reset"] {
+.contactbox h3 {                                   /************MISE EN FORME DU H3*********************/
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contactbox [type="submit"], [type="reset"] {               /************MISE EN FORM DES BOUTONS*************/
     padding: 0.5em;
     font-size: 1em;
     font-weight: 700;
@@ -112,7 +108,8 @@ header {
     justify-content: center;
     
 }
-footer {
+/***********FOOTER***********/
+footer {                                                    /*****MISE EN FORME DU FOOTER*******/
     width: 100%;
     background-color: #F5BCA9;
     min-height: 8vh;
@@ -123,11 +120,13 @@ footer {
 }
 }
 
+/*********ECRAN PC PORTABLE MAX 1366PX*************/
 @media(max-width:1366px){
     .contactbox {
         margin: 1em auto;       
     }
 }
+    /*********ECRAN PC PORTABLE MAX 1360PX*************/
 @media(max-width:1360px){
         .contactbox {
             margin: 0.5em auto;        
@@ -147,6 +146,7 @@ footer {
         }
         
     }
+/*********ECRAN PC TABLETTE MAX 991PX*************/
     @media(max-width:991px){
         .eva a {
             color: #fff;
@@ -158,6 +158,7 @@ footer {
             
             margin: 0.5em auto;        
         }
+        /*******************MISE EN FORME DU MENU DEROULANT************************/
 
 
         header {
@@ -224,7 +225,7 @@ footer {
         
     }
 }
-
+/*********ECRAN PC mobile MAX 500PX*************/
 @media(max-width:500px){
     .contactbox {
 

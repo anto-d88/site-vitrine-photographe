@@ -1,3 +1,4 @@
+/******ECRAN MAX 1920PX*******/
 @media(max-width:1920px){
     * {
         margin: 0;
@@ -7,11 +8,11 @@
         scroll-behavior: smooth;      
     }
 html {
-    overflow: hidden;
+    overflow: hidden;                                              /****RETIR LES BARE DE SCROL****/
 }
 
 /****HEADER*****/
-header {
+header {                                                         /****MISE EN FORME DU HEADER****/
     background: #F5BCA9;
     /*position: fixed;*/
     top: 0%;
@@ -25,38 +26,35 @@ header {
 
 }
 
-.eva a {
+.eva a {                                                         /****LOGO EN HAUT A GAUCHE EVA PICTUR****/
     color: #fff;
     font-size: 250%;
     text-decoration: none;
 
 }
-.navbar {
+.navbar {                                                         /*****ALIGNEMENT SUR UNE LIGNE HORIZONTAL DES TITRES DE LA NAVBAR****/
     display: flex;
     position: relative;
     
 }
-.navbar .title{
-    display: inline-block;
-    position: relative;
+.navbar .title{                                             /******RETIR LES POINTS DE MA LISTE******/
     list-style: none;
-    transition: 0.5s;
-    
 }
-.navbar .title a {
+.navbar .title a {                                           /*******MISE EN FORME DES TITRES DE LA NABAR******/
     font-size: 2em;
     color: #fff;
     text-decoration: none;
     margin-left: 3em;
     font-weight: 700;
 }
-.navbar .title a:hover {
+.navbar .title a:hover {                             /************CHANGE LA COULEUR DU TEXTE AU PASSAGE DE LU CURSEUR AVEC UNE TRANSITION DE 0.05S**************/
+    transition: 0.05s;
     transition: 0.05s;
     color: #000;
 }
 
        /****MAIN*****/
-main {
+main {                                                     /*************POSITIONNEMENT DES ELEMENT*****************/
     width: 100%;
     display: flex;    
    justify-content: space-evenly;
@@ -64,23 +62,24 @@ main {
     margin-bottom:2em;
     margin-left: 20em;
 }
-main article  {
+main article  {                                          /*********TAILLE MAX DU BLOQUE DE TEXTE*******************/
     text-align: center;
     width: 75%;   
 }
-main article h1 {
+main article h1 {                                     /*************MISE EN FORME ET POSITIONNEMENT DU H1************/
     color: #F5BCA9;
     font-size: 3em;
 }
-main article p {
+main article p {                                    /**************MISE EN FORME DU TEXTE*******************/
     font-size: 2em;
     text-align: justify;
 }
-main img {
+main img {                                           /*************POSITOINNEMENT ET TAILLE DE L IMAGE***************/
     margin: 10em;
     width: 50%;
 }
-footer {
+/*********FOOTER***********/
+footer {                                  /*****MISE EN FORME DU FOOTER*******/
     width: 100%;
     background-color: #F5BCA9;
     min-height: 8vh;
@@ -90,6 +89,7 @@ footer {
     display: flex;
 }
 }
+/*********ECRAN PC PORTABLE MAX 1366PX*************/
 @media(max-width:1366px){
 main { 
     width: 100%;
@@ -116,6 +116,7 @@ main img {
     width: 92%;
 }
 }
+/*********ECRAN PC PORTABLE MAX 1360PX*************/
 @media(max-width:1360px){
     main img {
         margin:0 10%;   
@@ -136,6 +137,7 @@ main img {
     }
 
 }
+/*********ECRAN PC TABLETTE MAX 991PX*************/
 @media(max-width:991px){
     .eva a {
         color: #fff;
@@ -160,6 +162,7 @@ main img {
         margin: auto;
         width: 100%;
     }
+    /*******************MISE EN FORME DU MENU DEROULANT************************/
     header {
         overflow: visible;
     }

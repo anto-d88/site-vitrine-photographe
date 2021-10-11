@@ -1,3 +1,4 @@
+/******ECRAN MAX 1920PX*******/
 @media(max-width:1920px){
     * {
         margin: 0;
@@ -7,10 +8,10 @@
         scroll-behavior: smooth; 
     }
      html{
-      overflow: hidden;
+      overflow: hidden;                            /****RETIR LES BARE DE SCROL****/
     }
     /****HEADER*****/
-    header {
+    header {                                       /****MISE EN FORME DU HEADER****/
         background: #F5BCA9;
         /*position: fixed;*/
         top: 0%;
@@ -21,45 +22,41 @@
         justify-content: space-around;
         align-items: center;
     }
-    .eva a {
+    .eva a {                                         /****LOGO EN HAUT A GAUCHE EVA PICTUR****/
         color: #fff;
         font-size: 250%;
         text-decoration: none;
     
     }
-    .navbar {
+    .navbar {                                            /*****ALIGNEMENT SUR UNE LIGNE HORIZONTAL DES TITRES DE LA NAVBAR****/
         display: flex;
         position: relative;
         
     }
-    .navbar .title{
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        transition: 0.5s;
-        
+    .navbar .title{                                      /******RETIR LES POINTS DE MA LISTE******/
+        list-style: none;    
     }
-    .navbar .title a {
+    .navbar .title a {                                  /*******MISE EN FORME DES TITRES DE LA NABAR******/
         font-size: 2em;
         color: #fff;
         text-decoration: none;
         margin-left: 3em;
         font-weight: 700;
     }
-    .navbar .title a:hover {
+    .navbar .title a:hover {                                  /************CHANGE LA COULEUR DU TEXTE AU PASSAGE DE LU CURSEUR AVEC UNE TRANSITION DE 0.05S**************/
         transition: 0.05s;
         color: #000;
     }
-}
+
     
        /****MAIN*****/
-.titre {
+.titre {                                                      /*************POSITIONNEMENT DU TITRE**************/
     text-align: center;
     font-size: 5em;
 }
     /****PHOTOS GALERIE****/
 
-.images {
+.images {                                                         /************POSITIONNEMENT DES PHOTOS *************/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +65,7 @@
     margin-bottom: 9em;
     
 }
-.images img {
+.images img {                                              /*********TAILLE DES IMAGE***************/
     margin: 1em;
     max-width: 20em;
     max-height: 20em;
@@ -76,7 +73,7 @@
 
 /***FOOTER***/
 
-footer {
+footer {                              /*****MISE EN FORME DU FOOTER*******/
     width: 100%;
     background-color: #F5BCA9;
     min-height: 8vh;    
@@ -84,10 +81,10 @@ footer {
     justify-content: space-evenly;
     display: flex;
 }
+}
 
 
-
-
+/*********ECRAN PC PORTABLE MAX 1366PX*************/
 @media(max-width:1366px){
 
 
@@ -105,6 +102,7 @@ footer {
         max-height: 15em;
     }
 }
+/*********ECRAN PC PORTABLE MAX 1360PX*************/
 @media(max-width:1360px){
 .images {
     margin-bottom: 3em;
@@ -123,6 +121,7 @@ footer {
     font-weight: 700;
 }
 }
+/*********ECRAN PC TABLETTE MAX 991PX*************/
 @media(max-width:991px){
     .eva a {
         color: #fff;
@@ -130,6 +129,7 @@ footer {
         text-decoration: none;
     
     }
+    /*******************MISE EN FORME DU MENU DEROULANT************************/
     header {
         overflow: visible;
         position: sticky;
