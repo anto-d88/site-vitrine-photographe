@@ -121,6 +121,19 @@ main img {
         margin:0 10%;   
         width: 90%;
     }
+    .eva a {
+        color: #fff;
+        font-size: 200%;
+        text-decoration: none;
+    
+    }
+    .navbar .title a {
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 2em;
+        font-weight: 700;
+    }
 
 }
 @media(max-width:991px){
@@ -175,7 +188,7 @@ main img {
     
     header .navbar.active{
         width: 100%;
-        height: calc(100% -68px);
+        height: calc(100% 50%);
         position: fixed;
         top: 3em;
         left:0;

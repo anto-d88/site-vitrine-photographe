@@ -35,7 +35,7 @@
       <li class="title"><a href="grossese.html" onclick="toggleMenu();">Galerie Grossese</a></li>
       <li class="title"><a href="tarif.html" onclick="toggleMenu();">Tarif</a></li>
       <li class="title"><a href="a-propos.html" onclick="toggleMenu();">A propos</a></li>
-      <li class="title"><a href="contact.html"onclick="toggleMenu();">Contact</a></li>
+      <li class="title"><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
     </ul>
   </header>
   <main>
@@ -59,7 +59,8 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript">
+
+  <script>
     window.addEventListener('scroll', function(){
         const header =document.querySelector('header');
         header.classList.toggle("sticky", window.scrollY > 0 );

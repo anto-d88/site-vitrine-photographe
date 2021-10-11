@@ -1,4 +1,4 @@
-@media(max-width:1920px){
+@media(max-width:1920px){                    /******               
     * {
         margin: 0;
         padding: 0%;
@@ -52,32 +52,35 @@ header {
     transition: 0.05s;
     color: #000;
 }
-
-}
 /****MAIN****/
-/*main {
-    width: 100%;
-    display: flex;    
+main {
+    display: flex;
     justify-content: space-evenly;
-    align-content: center;
-   
-    margin-bottom:1.5em;
-    margin-left: 5em
+    
 }
 main article  {
-    text-align: center;
-    width: 50%;  
-    margin-left: 20em
+    max-width: 40%;
+
 }
 main article h1 {
-    width: 70%;
-    font-size: 3em;
+    text-align: center;
+    font-size: 500%;
+
 }
 main article p {
-    width: 70%;
-    font-size: 2em;
     text-align: justify;
+    font-size: 200%;
+    margin-bottom: 2em;
 }
+main img{
+    margin-top: 5em;
+    width: 100%;
+ 
+}
+
+}
+
+
 /****FOOTER*****/
 footer {
     width: 100%;
@@ -100,6 +103,7 @@ footer {
     }
     main article h1 {
         text-align: center;
+        font-size: 300%;
   
     }
     main article p {
@@ -107,12 +111,26 @@ footer {
         font-size: 140%;
     }
     main img{
+        margin-top: 0;
         width: 82%;
      
     }
     
 }
 @media(max-width:1360px){
+    .eva a {
+        color: #fff;
+        font-size: 200%;
+        text-decoration: none;
+    
+    }
+    .navbar .title a {
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        margin-left: 2em;
+        font-weight: 700;
+    }
     
     main {
         display: flex;
@@ -193,7 +211,7 @@ footer {
     
     header .navbar.active{
         width: 100%;
-        height: calc(100% -68px);
+        height: calc(100% 50%);
         position: fixed;
         top: 3em;
         left:0;

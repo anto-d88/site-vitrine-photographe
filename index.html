@@ -45,14 +45,14 @@
 <main>
   <section class="fond">
       <section class="caroussel">
-          <section class="player">
+          <figure class="player">
             <img src="./img/bebe-banniere-01.jfif" alt="bebe-b01">
             <img src="./img/bebe-banniere-02.jpg" alt="bebe-b02">
             <img src="./img/bebe-banniere-04.jfif" alt="bebe-b03">
             <img src="./img/bebe-banniere-01.jfif" alt="bebe-b01">
             <img src="./img/bebe-banniere-02.jpg" alt="bebe-b02">
             <img src="./img/bebe-banniere-04.jfif" alt="bebe-b03">
-          </section>
+          </figure>
       </section>
     </section>
     <section class="text">
@@ -76,12 +76,8 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-<script type="text/javascript">
+
+<script >
   window.addEventListener('scroll', function(){
       const header =document.querySelector('header');
       header.classList.toggle("sticky", window.scrollY > 0 );

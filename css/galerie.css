@@ -109,6 +109,19 @@ footer {
 .images {
     margin-bottom: 3em;
 }
+.eva a {
+    color: #fff;
+    font-size: 200%;
+    text-decoration: none;
+
+}
+.navbar .title a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2em;
+    font-weight: 700;
+}
 }
 @media(max-width:991px){
     .eva a {
@@ -147,7 +160,7 @@ footer {
     
     header .navbar.active{
         width: 100%;
-        height: calc(100% -68px);
+        height: calc(100% 50%);
         position: fixed ;
         top: 3em;
         left:0;

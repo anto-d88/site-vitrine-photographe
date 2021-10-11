@@ -125,12 +125,25 @@ footer {
 
 @media(max-width:1366px){
     .contactbox {
-        margin: 1em auto;        
+        margin: 1em auto;       
     }
 }
 @media(max-width:1360px){
         .contactbox {
             margin: 0.5em auto;        
+        }
+        .eva a {
+            color: #fff;
+            font-size: 200%;
+            text-decoration: none;
+        
+        }
+        .navbar .title a {
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2em;
+            font-weight: 700;
         }
         
     }
@@ -175,7 +188,7 @@ footer {
     
     header .navbar.active{
         width: 100%;
-        height: calc(100% -68px);
+        height: calc(100% 50%);
         position: fixed;
         top: 3em;
         left:0;
