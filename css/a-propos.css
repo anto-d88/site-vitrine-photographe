@@ -7,9 +7,9 @@
         font-family: 'Birthstone', 'cursive';
         scroll-behavior: smooth; 
     }
-/*     html {                                                                      /****RETIR LES BARE DE SCROL****/
-        overflow: hidden;
-    } */
+/*      html {                                                                      /****RETIR LES BARE DE SCROL****/ 
+/*         overflow: hidden; */
+/*     }  */
 /****HEADER*****/
 header {                                                                     /****MISE EN FORME DU HEADER****/
     background: #F5BCA9;
