@@ -7,9 +7,9 @@
     font-family: 'Birthstone', 'cursive';
     scroll-behavior: smooth; 
 }
- html{
+/*  html{
   overflow: hidden;                          /****RETIR LES BARE DE SCROL****/
-}
+} */
 /****HEADER*****/
 header {                                        /****MISE EN FORME DU HEADER****/
     background: #F5BCA9;
